@@ -1,44 +1,42 @@
-:root{
+:root {
   --violet: hsl(257, 40%, 49%);
   --magenta: hsl(300, 69%, 71%);
   --white: white;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,400;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,400;1,600&display=swap");
 
 /* 
 font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif; */
 
-
 /* 
 - Mobile: 375px
 - Desktop: 1440px */
 
-
-body{
-  font-family: 'Open Sans', sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
   background-color: var(--violet);
   color: var(--white);
-  margin: 0 ;
-  padding: 0 ;
-  position: relative; 
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
-.header{
+.header {
   width: 90%;
   margin: auto;
   padding: 3rem 0;
 }
 
-.container{
+.container {
   width: 100%;
-  min-height: 100vh; 
-  position: relative; 
+  min-height: 100vh;
+  position: relative;
   overflow: hidden;
 }
 
-.container .background img{
+.container .background img {
   height: 100%;
   position: absolute;
   z-index: -1;
@@ -51,35 +49,35 @@ body{
   min-height: 100%;
 }
 
-.main > .information{
+.main > .information {
   display: flex;
 }
 
-.main > .information div:nth-child(1){
+.main > .information div:nth-child(1) {
   width: 60%;
 }
 
-.main > .information div:nth-child(2){
+.main > .information div:nth-child(2) {
   width: 40%;
 }
 
-.main img{
+.main img {
   min-width: 80%;
   max-width: 90%;
 }
 
-.main h1{
+.main h1 {
   font-size: 2.6em;
   line-height: 1.2;
-  font-family: 'Poppins', sans-serif; 
+  font-family: "Poppins", sans-serif;
 }
 
-.main p{
+.main p {
   font-size: 1.19em;
   line-height: 1.5;
 }
 
-.button{
+.button {
   text-decoration: none;
   color: var(--violet);
   background-color: var(--white);
@@ -89,21 +87,20 @@ body{
   box-shadow: 0px 0px 7px #4b4949;
 }
 
-a[class="button"]:hover{
+a[class="button"]:hover {
   color: var(--white);
   background-color: var(--magenta);
-  transition: .3s;
+  transition: 0.3s;
 }
 
-
-.websites{
+.websites {
   display: flex;
   justify-content: flex-end;
 }
 
-.websites a{
+.websites a {
   color: var(--white);
-  margin-inline: .5rem;
+  margin-inline: 0.5rem;
   width: 35px;
   height: 35px;
   display: flex;
@@ -114,18 +111,16 @@ a[class="button"]:hover{
   text-decoration: none;
 }
 
-.websites a:hover{
+.websites a:hover {
   border-color: var(--magenta);
-  color: var(--magenta)!important;
+  color: var(--magenta) !important;
 }
 
-
-
-.footer{
+.footer {
   position: absolute;
   width: 100%;
   bottom: 0;
-  padding: .4rem 0;
+  padding: 0.4rem 0;
   background-color: black;
 }
 
@@ -136,34 +131,30 @@ a[class="button"]:hover{
 
 .attribution a {
   color: var(--magenta);
-
 }
-
-
 
 /*============================ RESPONSIVE ============================*/
 
-@media(max-width:1199px) {
-  .main > .information div:nth-child(1){
+@media (max-width: 1199px) {
+  .main > .information div:nth-child(1) {
     width: 50%;
   }
-  
-  .main > .information div:nth-child(2){
+
+  .main > .information div:nth-child(2) {
     width: 50%;
   }
 
   .main h1 {
     margin: 0;
-}
+  }
 }
 
-@media(max-width:992px) and (min-width: 768px){
-
-  .main > .information div:nth-child(1){
+@media (max-width: 992px) and (min-width: 768px) {
+  .main > .information div:nth-child(1) {
     width: 45%;
   }
 
-  .main > .information div:nth-child(2){
+  .main > .information div:nth-child(2) {
     width: 55%;
   }
 
@@ -173,13 +164,13 @@ a[class="button"]:hover{
 
   .main h1 {
     margin: 0;
-}
+  }
 
   .main p {
     font-size: 1em;
   }
 
-  .button{
+  .button {
     justify-content: center;
     display: flex;
     padding: 1rem;
@@ -191,53 +182,49 @@ a[class="button"]:hover{
   }
 }
 
-@media(max-width: 767px){  
-
-  .header img{
+@media (max-width: 767px) {
+  .header img {
     width: 50%;
   }
 
-  .information{
+  .information {
     text-align: center;
     display: block !important;
     width: 90%;
     margin: auto;
   }
-  
-  .main > .information div:nth-child(1), .main > .information div:nth-child(2){
+
+  .main > .information div:nth-child(1),
+  .main > .information div:nth-child(2) {
     width: 100%;
   }
 
-  .container .background img{
+  .container .background img {
     height: auto;
     width: 100%;
   }
 
-  .main h1{
+  .main h1 {
     font-size: 1.7em;
   }
 
-  .main p{
+  .main p {
     font-size: initial;
     line-height: 1.5;
   }
 
-  .main img{
+  .main img {
     margin-bottom: 2rem;
   }
 
-  .footer{
+  .footer {
     position: relative;
-    padding: .4rem 0;
+    padding: 0.4rem 0;
     background-color: black;
   }
 
-  .websites{
+  .websites {
     margin: 1rem auto;
     justify-content: center;
   }
-
 }
-
-
-
